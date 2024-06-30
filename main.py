@@ -5,16 +5,14 @@ def main():
     Code Your Program here
     ########################################
     """
-    lastval = False
+    lastval = None  
     while True:
-        Value= int(input("input Number"))
-        if lastval is not False and Value <= lastval:
-            numbers.append(lastval)
-        else:
-            lastval = True
-            if Value>lastval:
-             break
-        lastval==Value
+            Value=int(input("Enter a number: "))
+            if lastval is None or Value<=lastval:
+                numbers.append(Value)
+            else:
+                break
+            lastval=Value
     ########################################
     # Do not delete the return statement
     ########################################
